@@ -172,7 +172,7 @@ public class App {
         System.out.println("The factorial of the number"+number+" is "+result);
     }
     public static int factorial(int number) {
-        return 0
+        return 0;
     }
     private static void calculatorInterface(){
         System.out.println("Enter the number A:");
