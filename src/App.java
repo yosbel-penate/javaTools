@@ -172,12 +172,7 @@ public class App {
         System.out.println("The factorial of the number"+number+" is "+result);
     }
     public static int factorial(int number) {
-        int output;
-        if(number==1){
-            return 1;
-        }
-        output = factorial(number-1)* number;
-        return output;
+        return 0
     }
     private static void calculatorInterface(){
         System.out.println("Enter the number A:");
@@ -194,23 +189,6 @@ public class App {
         System.out.println(numberA+" "+operation+" "+numberB+" = "+result);
     }
     public static double basicCalculator(String operation, double numberA, double numberB){
-        double result = 0;
-        switch (operation) {
-            case "+":
-                result = numberA + numberB;
-                break;
-            case "-":
-                result = numberA - numberB;
-                break;
-            case "*":
-                result = numberA * numberB;
-                break;
-            case "/":
-                result = numberA / numberB;
-                break;
-            default:
-                break;
-        }
-        return result;
+        return 0;
     }
 }
