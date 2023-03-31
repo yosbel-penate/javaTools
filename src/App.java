@@ -65,6 +65,7 @@ public class App {
         return false;
     }
     private static void convertToMinutesAndSecondsInterface() {
+
         System.out.println("Enter the seconds:");
         int number = input.nextInt();
 
