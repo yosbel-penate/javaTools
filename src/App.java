@@ -170,15 +170,25 @@ public class App {
         return result;
     }
     private static void factorialInterface() {
-        System.out.println("Enter the number:");
-        int number = input.nextInt();
-
-        int result = factorial(number);
-        System.out.println("The factorial of the number"+number+" is "+result);
-    }
-    public static int factorial(int number) {
-        return 0;
-    }
+            System.out.println("Enter the number:");
+            int number = input.nextInt();
+        
+            int result = factorial(number);
+            System.out.println("The factorial of the number "+number+" is "+result);
+        }
+        
+        public static int factorial(int number) {
+            if (number == 0) {
+                return 1;
+            } else {
+                int factorial = 1;
+                for (int i = 1; i <= number; i++) {
+                    factorial *= i;
+                }
+                return factorial;
+            }
+        }
+        
     private static void calculatorInterface(){
         System.out.println("Enter the number A:");
         double numberA = input.nextDouble();
