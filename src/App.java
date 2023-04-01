@@ -110,8 +110,19 @@ public class App {
         System.out.println("The binary number of: "+number+" is: "+result);
     }
     public static String convertToBinary(int number) {
-        /*Code here*/
-        return null;
+        public static String convertToBinary(int number) {
+            int result=0,resto,i=0;
+            while(number < 0){
+                resto=0;
+                result=0;
+            }
+            while(number!=0){
+                       resto = number % 2;           
+                        result = (int)(result + resto * Math.pow(10, i));                                                   
+                        i++;
+                        number = number/2;
+            }
+            return Integer.toString(result);
     }
     private static void reverseInterface() {
         System.out.println("Enter the string:");
