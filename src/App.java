@@ -62,7 +62,15 @@ public class App {
     }
     public static boolean prime(int number) {
         /*Code here*/
-        return false;
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
     private static void convertToMinutesAndSecondsInterface() {
 
