@@ -111,7 +111,18 @@ public class App {
     }
     public static String convertToBinary(int number) {
         /*Code here*/
-        return null;
+        int result=0,resto,i=0;
+            while(number < 0){
+                resto=0;
+                result=0;
+            }
+            while(number!=0){
+                       resto = number % 2;           
+                        result = (int)(result + resto * Math.pow(10, i));                                                   
+                        i++;
+                        number = number/2;
+            }
+        return Integer.toString(result);;
     }
     private static void reverseInterface() {
         System.out.println("Enter the string:");
