@@ -65,6 +65,7 @@ public class App {
         return false;
     }
     private static void convertToMinutesAndSecondsInterface() {
+
         System.out.println("Enter the seconds:");
         int number = input.nextInt();
 
@@ -76,7 +77,11 @@ public class App {
             input: 5395
             output: 5395 seconds = 89 minutes, 55 seconds
         */
-        return null;
+        int minutes = number / 60 ;
+        int seconds = number % 60;
+        String cadena =  Integer.toString(minutes) + " minutes, " + Integer.toString(seconds) + " seconds" ;             
+          
+       return cadena; 
     }
     private static void convertToBase16Interface() {
         System.out.println("Enter the number A:");
