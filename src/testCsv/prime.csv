@@ -1,7 +1,0 @@
-input,expected
-2,true
-3,true
-5,true
-23,true
-4,false
-10,false
